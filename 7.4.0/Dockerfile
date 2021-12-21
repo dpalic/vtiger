@@ -25,7 +25,7 @@ RUN usermod -u 1000 www-data && groupmod -g 1000 www-data && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     a2enmod ssl && a2enmod rewrite && ${LAYER_BREAK}
 RUN cd /usr/src/vtiger && \
-    curl -o vtiger.tar.gz -L "http://sourceforge.net/projects/vtigercrm/files/vtiger%20CRM%207.4.0/Core%20Product/vtigercrm7.4.0.tar.gz" && \
+    curl -o vtiger.tar.gz -L "https://sourceforge.net/projects/vtigercrm/files/vtiger%20CRM%207.4.0/Core%20Product/vtigercrm7.4.0.tar.gz" && \
     tar -xzf vtiger.tar.gz && \
     rm vtiger.tar.gz && \
     rm -fr /var/www/html && \
