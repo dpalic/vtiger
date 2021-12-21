@@ -3,7 +3,7 @@ set -e
 
 declare -A source_code_hosting
 source_code_hosting=(
-  ["sourceforge_vtiger"]=http://sourceforge.net/projects/vtigercrm/files/
+  ["sourceforge_vtiger"]=https://sourceforge.net/projects/vtigercrm/files/
   ["github_javanile"]=https://github.com/javanile/vtiger-core/archive/
 )
 
