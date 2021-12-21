@@ -1,9 +1,9 @@
-FROM php:php:7.4.27-apache
+FROM php:7.4.27-apache
 LABEL maintainer="Francesco Bianco <info@javanile.org>"
 
 ENV LAYER_BREAK=true
 ENV VT_VERSION="7.4.0" \
-    DATABASE_PACKAGE="mariadb-server-10.3" \
+    DATABASE_PACKAGE="mariadb-server-10.5" \
     PATH="/root/.composer/vendor/bin:$PATH"
 
 COPY php.ini /usr/local/etc/php/
